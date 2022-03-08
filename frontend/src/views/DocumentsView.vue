@@ -1,14 +1,14 @@
 <template>
-  <v-container>
-    <v-row>
-      <v-col></v-col>
+  <v-container fluid>
+    <v-row align="center">
+      <v-col cols="12" sm="2"></v-col>
 
-      <v-col class="mb-5" cols="12">
+      <v-col cols="12" sm="8">
         <h2 class="headline font-weight-bold mb-3 text-center">
           Search by Title
         </h2>
 
-        <v-row justify="center">
+        <v-row>
           <v-col cols="12">
             <v-text-field
               v-model="search"
@@ -131,6 +131,7 @@
           </v-col>
         </v-row>
       </v-col>
+      <v-col cols="12" sm="2"></v-col>
     </v-row>
     <v-snackbar v-model="snackbar">
       {{ snackbarText }}
